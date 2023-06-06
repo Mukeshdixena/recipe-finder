@@ -9,7 +9,8 @@ const Recipes = () => {
 
     useEffect(() => {
         getSearchedResult();
-    }, [searchedQuery]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [searchedQuery])
 
     const getSearchedResult = async () => {
         let result = await getRecipes(searchedQuery);
