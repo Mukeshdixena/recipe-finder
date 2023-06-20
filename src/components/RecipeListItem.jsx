@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const RecipeListItem = ({recipe}) => {
     return(
-        <Card>
+        <Card className="card-body">
             <img src={recipe.image_url} alt="thumbnail" style={{height:200}}/>
             <Card.Content>
                 <Card.Header content={recipe.title} />
@@ -17,14 +17,14 @@ const RecipeListItem = ({recipe}) => {
                      as={Link}
                      to={`/recipes/${recipe.recipe_id}`}
                      content="Details"
-                     color="blue"
+                     color="black"
                      size="tiny"
                 />
                 <Button 
                      href={recipe.source_url}
                      target='_blank'
                      content="Recipe URL"
-                     color="green "
+                     color="red"
                      size="tiny"
                 />
 

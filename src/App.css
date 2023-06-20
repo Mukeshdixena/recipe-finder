@@ -14,6 +14,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* background-color: black; */
 }
 
 .header-title {
@@ -34,5 +35,21 @@
   margin-bottom: 16px;
 }
 .detailsPageContent {
-    padding-top:100px !important
+    padding-top:100px !important;
+    /* background-color: #5F264A !important; */
+  
+}
+
+
+
+.recipe-body{
+  background-color: #5F264A !important;
+}
+.head{
+  background-color: white !important;
+}
+
+.card-body{
+  background-color: rgba(255, 255, 255, 0.479) !important;
+  border: none !important;
 }

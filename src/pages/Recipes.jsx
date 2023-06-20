@@ -21,8 +21,11 @@ const Recipes = () => {
 
     return (
         <>
+        <div className="recipe-body">
+
             <Search setSearchedQuery={setSearchedQuery} />
             <RecipeList recipes={recipes} searchedQuery={searchedQuery} />
+        </div>
         </>
     )
 }

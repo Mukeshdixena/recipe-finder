@@ -23,6 +23,7 @@ const RecipeDetails = () => {
     }, [recipeId])
 
     return (
+        
         Object.keys(recipe).length > 0 ?
             <Grid container stackable columns={2} className="detailsPageContent">
                 <Grid.Column>
@@ -30,7 +31,7 @@ const RecipeDetails = () => {
                         as={Link}
                         to={'/recipes'}
                         content="Back to recipe List"
-                        color="yellow"
+                        color="black"
                         style={{ marginBottom: 40 }}
                     />
                     <Image src={recipe.image_url} />
@@ -44,7 +45,7 @@ const RecipeDetails = () => {
                         href={recipe.publisher_url}
                         target='_blank'
                         content="Publisher Webpage"
-                        color="blue"
+                        color="black"
                         
                     />
                     <Button
@@ -52,7 +53,7 @@ const RecipeDetails = () => {
                         href={recipe.source_url}
                         target='_blank'
                         content="Recipe URL"
-                        color="green"
+                        color="red"
                         
                     />
                     <Header size="large" constent='Ingredients' />
